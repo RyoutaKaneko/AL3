@@ -49,10 +49,12 @@ class GameScene {
 	Model* model_ = nullptr;
 	DebugText* debugText_ = nullptr;
 	WorldTransform worldTransform_;
-	/*WorldTransform worldTransform2_;
-	WorldTransform worldTransform3_;*/
+	WorldTransform worldTransform2_;
+	WorldTransform worldTransform3_;
 	ViewProjection viewProjection_;
 	uint32_t textureHandle_ = 0;
+	float value_ = 4.0f;
+	float speed_ = 0.0f;
 
 	/// <summary>
 	/// ゲームシーン用
