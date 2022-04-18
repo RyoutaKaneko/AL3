@@ -54,6 +54,20 @@ class GameScene {
 	uint32_t textureHandle_ = 0;
 	float viewAngle = 0.0f;
 
+	public:
+	//パーツID
+		enum PartId {
+		Root,
+		Spine,
+		Chest,
+		Head,
+		ArmL,
+		ArmR,
+		Hip,
+		LegL,
+		LegR
+	  };
+
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
