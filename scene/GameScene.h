@@ -46,7 +46,27 @@ class GameScene {
 	DirectXCommon* dxCommon_ = nullptr;
 	Input* input_ = nullptr;
 	Audio* audio_ = nullptr;
+	Model* model_ = nullptr;
+	Sprite* sprite_ = nullptr;
 	DebugText* debugText_ = nullptr;
+	WorldTransform worldTransform_[100];
+	ViewProjection viewProjection_;
+	uint32_t textureHandle_ = 0;
+	float viewAngle = 0.0f;
+
+	public:
+	//パーツID
+		enum PartId {
+		Root,
+		Spine,
+		Chest,
+		Head,
+		ArmL,
+		ArmR,
+		Hip,
+		LegL,
+		LegR
+	  };
 
 	/// <summary>
 	/// ゲームシーン用
