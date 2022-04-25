@@ -49,25 +49,11 @@ class GameScene {
 	Model* model_ = nullptr;
 	Sprite* sprite_ = nullptr;
 	DebugText* debugText_ = nullptr;
-	WorldTransform worldTransform_[100];
+	WorldTransform worldTransform_;
 	ViewProjection viewProjection_;
 	uint32_t textureHandle_ = 0;
 	float viewAngle = 0.0f;
-
-	public:
-	//パーツID
-		enum PartId {
-		Root,
-		Spine,
-		Chest,
-		Head,
-		ArmL,
-		ArmR,
-		Hip,
-		LegL,
-		LegR
-	  };
-
+	const float PI = 3.141519;
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
