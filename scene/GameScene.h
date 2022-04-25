@@ -49,11 +49,13 @@ class GameScene {
 	Model* model_ = nullptr;
 	Sprite* sprite_ = nullptr;
 	DebugText* debugText_ = nullptr;
-	WorldTransform worldTransform_;
+	WorldTransform worldTransform_[5];
 	ViewProjection viewProjection_;
 	uint32_t textureHandle_ = 0;
 	float viewAngle = 0.0f;
 	const float PI = 3.141519;
+	const float viewLengthY = 20;
+	const float viewLengthZ = -30;
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
